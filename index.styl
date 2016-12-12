@@ -1,0 +1,110 @@
+// Declare colors
+pink = #E91E63
+green = #8BC34A
+
+// Import Robot Font
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500')
+
+// Style
+body
+html
+  height 100% !important
+  font-family: 'Roboto', sans-serif
+header
+  background url('http://i.imgur.com/qANHbq1.jpg') center center no-repeat
+  background-size cover
+  min-height 100%
+  -webkit-background-size cover;
+  overflow hidden
+  nav
+    color white
+    padding 10px
+    a
+      color white
+    .g_download
+      float right
+      padding 20px
+      .btn-donwload
+        background rgba(pink,.3)
+        border 2px solid rgba(pink,0.8)
+        color white
+        -webkit-border-radius 7px
+        border-radius: 3px
+        padding 10px 20px
+        margin-top 12px
+        transition all 0.2s linear
+        &:hover
+          background: rgba(pink.6)
+          color rgba(white,0.8)
+  .g_landingpage
+    .btn-join
+      background rgba(green,.3)
+      border 2px solid rgba(green,0.4)
+      color white
+      -webkit-border-radius 7px
+      border-radius: 3px
+      padding 12px 25px
+      margin-top 12px
+      transition all 0.2s linear
+      &:hover
+        background: rgba(green.6)
+        color rgba(white,0.8)
+
+
+
+
+
+
+.g_arrows
+  .arrows
+    width 60px
+    height 72px
+    position absolute
+    left 50%
+    margin-left -30px
+    bottom 20px
+  .arrows path
+    stroke rgba(white,0.6)
+    fill transparent
+    stroke-width 1.5px
+    animation arrow 2s infinite
+    -webkit-animation arrow 2s infinite
+  .arrows path.a1
+    animation-delay -1s
+    -webkit-animation-delay -1s
+  .arrows path.a2
+    animation-delay -0.5s
+    -webkit-animation-delay -0.5s
+  .arrows path.a3
+    animation-delay 0s
+    -webkit-animation-delay 0s
+
+  @keyframes arrow {
+      0% {
+          opacity: 0
+      }
+      40% {
+          opacity: 1
+      }
+      80% {
+          opacity: 0
+      }
+      100% {
+          opacity: 0
+      }
+  }
+  @-webkit-keyframes arrow
+  {
+      0% {
+          opacity: 0
+      }
+      40% {
+          opacity: 1
+      }
+      80% {
+          opacity: 0
+      }
+      100% {
+          opacity: 0
+      }
+  }
