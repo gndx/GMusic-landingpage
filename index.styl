@@ -4,14 +4,16 @@ green = #8BC34A
 
 // Import Robot Font
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500')
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
 // Style
 body
 html
   height 100% !important
   font-family: 'Roboto', sans-serif
+a
+  text-decoration none !important
 header
-  background url('http://i.imgur.com/qANHbq1.jpg') center center no-repeat
+  background url('http://i.imgur.com/VJO4GaF.jpg') center center no-repeat fixed
   background-size cover
   min-height 100%
   -webkit-background-size cover;
@@ -21,33 +23,58 @@ header
     padding 10px
     a
       color white
+    .g_logo
+      h1
+        font-family: 'Open Sans Condensed', sans-serif;
+        a
+          color white
+          transition all 0.2s linear
+        &:hover
+          color rgba(white,0.8)
+          text-decoration none !important
     .g_download
       float right
-      padding 20px
+      padding 10px
       .btn-donwload
-        background rgba(pink,.3)
+        background rgba(pink,0.2)
         border 2px solid rgba(pink,0.8)
         color white
         -webkit-border-radius 7px
-        border-radius: 3px
-        padding 10px 20px
-        margin-top 12px
+        border-radius: 4px
+        padding 12px 20px
+        margin-top 8px
+        font-weight: 300
         transition all 0.2s linear
         &:hover
-          background: rgba(pink.6)
+          background: rgba(pink,0.4)
           color rgba(white,0.8)
   .g_landingpage
+    padding-top 20vh
+    text-align: center
+    color white
+    h2
+      font-size: 54px
+      font-weight: 200
+      margin-bottom: 20px
+    p
+      width: 65%
+      font-size 22px
+      font-weight: 300
+      display block
+      margin 0 auto
     .btn-join
-      background rgba(green,.3)
-      border 2px solid rgba(green,0.4)
+      background rgba(green,1)
+      border 2px solid rgba(green,0.8)
       color white
       -webkit-border-radius 7px
       border-radius: 3px
-      padding 12px 25px
-      margin-top 12px
+      padding 10px 35px
+      font-size 18px
+      font-weight: 300
+      margin-top 22px
       transition all 0.2s linear
       &:hover
-        background: rgba(green.6)
+        background: rgba(green,0.6)
         color rgba(white,0.8)
 
 .g_features
